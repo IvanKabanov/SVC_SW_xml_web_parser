@@ -1,87 +1,133 @@
-#import xmltodict as xd 
-#from lxml import etree
 import untangle
-from datetime import datetime
 
-#with open('Nn_stats_78N1K98-2_170401_112309', 'r', encoding = 'utf8') as svc_file:
-#    xml_output = xd.parse(svc_file)
+def system_info(path_to_file):
+    obj = untangle.parse(path_to_file)
+    timestamp = obj.diskStatsColl['timestamp']
+    cluster_id = obj.diskStatsColl['cluster_id']
+    return (timestamp, cluster_id)
 
-#print(xml_output)
-
-
-#tree = etree.parse('Nn_stats_78N1K98-2_170401_112309')
-
-#print(tree)
-#diskStatsColl = tree.root()
-#print(diskStatsColl)
 
 def Nn_parser(path_to_file, upload_id):
     port_stats_list = []
     cpu_stats_list = []
     node_stats_list = []
-    #system_serial = path_to_file.split('_')[3][:-2]
     obj = untangle.parse(path_to_file)
-    timestamp = obj.diskStatsColl['timestamp']
-    cluster_id = obj.diskStatsColl['cluster_id']
+    timestamp, cluster_id = system_info(path_to_file)
+    #Parsing node port statistics:
     node_port_stats = obj.diskStatsColl.port
     for element in node_port_stats:
         if element['type'] == "FC":
-            port_perf = {}
-            port_perf['timestamp'] = timestamp
-            port_perf['upload_id'] = upload_id
-            port_perf['cluster_id'] = cluster_id
-            port_perf['id'] = int(element['id'])
-            port_perf['type'] = element['type']
-            port_perf['wwpn'] = element['wwpn']
-            port_perf['cbr'] = int(element['cbr'])
-            port_perf['cbt'] = int(element['cbt'])
-            port_perf['cer'] = int(element['cer'])
-            port_perf['cet'] = int(element['cet'])
-            port_perf['hbr'] = int(element['hbr'])
-            port_perf['hbt'] = int(element['hbt'])
-            port_perf['her'] = int(element['her'])
-            port_perf['het'] = int(element['het'])
-            port_perf['lnbt'] = int(element['lnbt'])
-            port_perf['lnbr'] = int(element['lnbr'])
-            port_perf['lnet'] = int(element['lnet'])
-            port_perf['lner'] = int(element['lner'])
-            port_perf['lf'] = int(element['lf'])
-            port_perf['lsy'] = int(element['lsy'])
-            port_perf['lsi'] = int(element['lsi'])
-            port_perf['pspe'] = int(element['pspe'])
-            port_perf['ltw'] = int(element['lf'])
-            port_perf['icrc'] = int(element['lsy'])
-            port_perf['bbcz'] = int(element['lsi'])
-            port_stats_list.append(port_perf)
+            port_perf = {
+            'timestamp': timestamp,
+            'upload_id': upload_id,
+            'cluster_id': cluster_id
+            }
+            port_perf_counters = ['id', 'type', 'wwpn', 'cbr', 'cbt', 'cer', 'cet', 
+            'hbr', 'hbt', 'her', 'het', 'lnbt', 'lnbr', 'lnet', 'lner', 'lf', 'lsy',
+            'lsi', 'pspe', 'itw', 'icrc', 'bbcz']
+            for counter in port_perf_counters:
+                if counter == 'type' or counter =='wwpn':
+                    port_perf[counter] = element[counter]
+                else:
+                    port_perf[counter] = int(element[counter])
+        port_stats_list.append(port_perf)    
+    #Parsing node CPU statistics:
     node_cpu_stats = obj.diskStatsColl.cpu_core
     for element in node_cpu_stats:
-        cpu_perf = {}
-        cpu_perf['timestamp'] = timestamp
-        cpu_perf['upload_id'] = upload_id
-        cpu_perf['cluster_id'] = cluster_id
-        cpu_perf['id'] = int(element['id'])
-        cpu_perf['system'] = int(element['system'])
-        cpu_perf['comp'] = int(element['comp'])
+        cpu_perf = {
+            'timestamp': timestamp,
+            'upload_id': upload_id,
+            'cluster_id': cluster_id
+            }
+        cpu_perf_counters = ['id', 'system', 'comp']
+        for counter in cpu_perf_counters:
+            cpu_perf[counter] = element[counter]
         cpu_stats_list.append(cpu_perf)
+    #Parsing node statistics:
     node_stats = obj.diskStatsColl.node
     for element in node_stats:
-        node_perf = {}
-        node_perf['timestamp'] = timestamp
-        node_perf['upload_id'] = upload_id
-        node_perf['cluster_id'] = cluster_id
-        node_perf['id'] = element['id']
-        node_perf['ro'] = int(element['ro'])
-        node_perf['wo'] = int(element['wo'])
-        node_perf['rb'] = int(element['rb'])
-        node_perf['wb'] = int(element['wb'])
-        node_perf['re'] = int(element['re'])
-        node_perf['we'] = int(element['we'])
-        node_perf['rq'] = int(element['rq'])
-        node_perf['wq'] = int(element['wq'])
-        #node_stats_list.append
-    print(port_stats_list)
-    print(cpu_stats_list)
-    print
-    return 
+        node_perf = {
+            'timestamp': timestamp,
+            'upload_id': upload_id,
+            'cluster_id': cluster_id
+            }
+        
+        node_perf_counters = ['id', 'ro', 'wo', 'rb', 'wb', 're', 'we', 'rq', 'wq']
+        for counter in node_perf_counters:
+            if counter == 'id':
+                node_perf[counter] = element[counter]
+            else:
+                node_perf[counter] = int(element[counter])
+        node_stats_list.append(node_perf)
+    return (port_stats_list, cpu_stats_list, node_stats_list)
 
-Nn_parser('/home/ivan/projects/xml_parser/examples/stats/v7k1/Nn_stats_78N1K98-2_170401_112309', 123456)
+
+def Nd_parser(path_to_file, upload_id):
+    disk_stats_list = []
+    obj = untangle.parse(path_to_file)
+    timestamp, cluster_id = system_info(path_to_file)
+    disk_stats = obj.diskStatsColl.mdsk
+    for element in disk_stats:
+        disk_perf = {
+        'timestamp': timestamp,
+        'upload_id': upload_id,
+        'cluster_id': cluster_id
+        }
+        disk_perf_counters = ['idx', 'ro', 'rb', 'wo', 're', 'we', 'rq', 'wq', 'ure',
+         'uwe', 'urq', 'uwq', 'pre', 'pwe', 'pro', 'pwo']
+        for counter in disk_perf_counters:
+            disk_perf[counter] = int(element[counter])
+        disk_stats_list.append(disk_perf)
+    return disk_stats_list
+
+
+def Nm_parser(path_to_file, upload_id):
+    mdisk_stats_list = []
+    obj = untangle.parse(path_to_file)
+    timestamp, cluster_id = system_info(path_to_file)
+    mdisk_stats = obj.diskStatsColl.mdsk
+    for element in mdisk_stats:
+        mdisk_perf = {
+        'timestamp': timestamp,
+        'upload_id': upload_id,
+        'cluster_id': cluster_id
+        }
+        mdisk_perf_counters = ['idx', 'id' 'ro', 'wo', 'rb', 'wb', 're', 'we', 'rq',
+        'wq', 'ure', 'uwe', 'urq', 'uwq', 'pre', 'pwe', 'pro', 'pwo']
+        for counter in mdisk_perf_counters:
+            mdisk_perf[counter] = element[counter]
+        mdisk_stats_list.append(mdisk_perf)
+    return mdisk_stats_list
+
+def Nv_parser(path_to_file, upload_id):
+    vdisk_stats_list = []
+    obj = untangle.parse(path_to_file)
+    timestamp, cluster_id = system_info(path_to_file)
+    vdisk_stats = obj.diskStatsColl.vdsk
+    for element in vdisk_stats:
+        vdisk_perf = {
+        'timestamp': timestamp,
+        'upload_id': upload_id,
+        'cluster_id': cluster_id
+        }
+        vdisk_perf_counters = ['idx', 'ctps', 'ctrhs', 'ctrhps', 'ctds', 'ctwfts', 
+        'ctwwts', 'ctwfws', 'ctwhs', 'cv', 'cm', 'ctws', 'ctrs', 'ctr', 'ctw', 'ctp',
+        'ctrh', 'ctrhp', 'ctd', 'ctwft', 'ctwwt', 'ctwfw', 'ctwfwsh', 'ctwfwshs',
+        'ctwh', 'gwot', 'gwo', 'gws', 'gwl', 'id', 'ro', 'wo', 'wou', 'rb', 'wb', 'rl',
+        'wl', 'gwot', 'gwo', 'gws', 'gwl', 'id', 'ro', 'wo', 'wou', 'rb', 'wb', 'rl',
+        'wl','rlw', 'wlw', 'xl', 'oro', 'owo', 'orl', 'owl', 'oiowp']
+        for counter in vdisk_perf_counters:
+            if counter == 'id':
+                vdisk_perf[counter] = element[counter]
+            else:
+                vdisk_perf[counter] = int(element[counter])
+        vdisk_stats_list.append(vdisk_perf)
+    return vdisk_stats_list
+
+
+#USAGE EXAMPLE
+# disk_stats_list_of_dicts = Nd_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
+# mdisk_stats_list_of_dicts = Nm_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
+# port_stats_list_of_dicts, cpu_stats_list_of_dicts, node_stats_list_of_dicts = Nn_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
+# vdisk_stats_list_of_dicts = Nv_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
+

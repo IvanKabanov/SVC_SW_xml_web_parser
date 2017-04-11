@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diskStatsColl
+xmlns="http://ibm.com/storage/management/performance/api/2003/04/diskStats"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ibm.com/storage/management/performance/api/2003/04/diskStats schema/SVCPerfStats.xsd" scope="node" id="node2" cluster="V7000-1" node_id="0x0000000000000002" cluster_id="0x00000200a0615f0e" sizeUnits="512B" timeUnits="msec" contains="managedDiskStats" timestamp="2017-04-01 12:08:09" timezone="GMT+3:00">
+<mdsk idx="0"
+ id="mdisk0" ro="757022770" wo="213464224" rb="189657959118" wb="104164112029" re="3301163067" we="3461860299" rq="3301130441" wq="3461866129"
+ ure="3301670183528" uwe="3462392102084" urq="3301637552827" uwq="3462397932353"
+ pre="62958" pwe="95831" pro="62958" pwo="95831">
+<ca dav="15517" dtav="78" dfav="8" />
+</mdsk>
+<mdsk idx="1"
+ id="Storwize_1_Mdisk5_1" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="2"
+ id="Storwize_1_Mdisk5_3" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="3"
+ id="Storwize_1_Mdisk5_4" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="4"
+ id="Storwize_1_Mdisk5_5" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="5"
+ id="Storwize_1_Mdisk5_6" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="6"
+ id="Storwize_1_Mdisk5_7" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="7"
+ id="Storwize_1_Mdisk5_8" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="8"
+ id="Storwize_1_Mdisk5_9" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="9"
+ id="Storwize_1_Mdisk5_10" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="10"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="11"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="12"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="13"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="14"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+<mdsk idx="15"
+ id="" ro="0" wo="0" rb="0" wb="0" re="0" we="0" rq="0" wq="0"
+ ure="0" uwe="0" urq="0" uwq="0"
+ pre="0" pwe="0" pro="0" pwo="0">
+<ca dav="0" dtav="0" dfav="0" />
+</mdsk>
+</diskStatsColl>

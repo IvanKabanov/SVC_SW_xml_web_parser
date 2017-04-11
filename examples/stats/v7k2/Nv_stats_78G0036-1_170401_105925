@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diskStatsColl
+xmlns="http://ibm.com/storage/management/performance/api/2005/08/vDiskStats"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ibm.com/storage/management/performance/api/2005/08/vDiskStats schema/SVCPerfStatsV.xsd" scope="node" id="node2" cluster="V7000-2" node_id="0x0000000000000002" cluster_id="0x00000200a0616a88" sizeUnits="512B" timeUnits="msec" contains="virtualDiskStats" timestamp="2017-04-01 10:59:25" timezone="GMT+3:00">
+<vdsk idx="0"
+ctps="0" ctrhs="75776314" ctrhps="0" ctds="300644983856"
+ctwfts="35" ctwwts="0" ctwfws="300647371198" ctwhs="2386715"
+cv="0" cm="0" ctws="300647371233" ctrs="1323733846083"
+ctr="27980224369" ctw="11206811404" ctp="0" ctrh="10884774"
+ctrhp="0" ctd="7472834035" ctwft="2" ctwwt="0"
+ctwfw="11206811402" ctwfwsh="0" ctwfwshs="0" ctwh="115380"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-cl01.00"
+ro="13146937795" wo="7354944944" wou="2180383175" rb="1322823664371" wb="299196134350"
+rl="31484442886" wl="6848358241" rlw="248763" wlw="71975" xl="4867362718">
+<ca rh="75776314" d="300644983856" ft="35" wt="0"
+fw="300647371198" wh="2386715" v="0" m="0"
+ri="13222748991" wi="7432858577" r="1323658069769" dav="281" dcn="29296" sav="184" scn="16709" teav="22" 
+tsav="0"  tav="328"  pp="0"/>
+<cpy idx="0">
+<ca p="585842639872" rh="1146905015591" ph="433535561251" d="246902149716"
+ft="1059" wt="0" fw="309234917389" wh="62357825117"
+v="6102480" m="1689027" pm="19108473804" ri="14330496644"
+wi="7489611251" r="177982078718" dav="10651" dcn="934"
+sav="20282" scn="111" pav="0" pcn="0"
+teav="1"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="1"
+ctps="0" ctrhs="9" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="153234686" ctwhs="8"
+cv="0" cm="0" ctws="153234686" ctrs="268883225971"
+ctr="4843057624" ctw="6278784" ctp="0" ctrh="9"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="6278784" ctwfwsh="0" ctwfwshs="0" ctwh="8"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-cl01.01"
+ro="1359404022" wo="4074778" wou="4022606" rb="268365741151" wb="153234410"
+rl="1047507452" wl="2422889" rlw="232" wlw="0" xl="554339599">
+<ca rh="9" d="0" ft="0" wt="0"
+fw="153234686" wh="8" v="0" m="0"
+ri="1361425722" wi="4075054" r="268883225962" dav="0" dcn="0" sav="17" scn="112" teav="0" 
+tsav="0"  tav="50"  pp="0"/>
+<cpy idx="0">
+<ca p="295460717312" rh="261728811454" ph="260639942596" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="138684" m="134678" pm="4343315026" ri="1657639097"
+wi="0" r="7173022608" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="2"
+ctps="0" ctrhs="15985223" ctrhps="0" ctds="696450532261"
+ctwfts="34" ctwwts="0" ctwfws="695698148595" ctwhs="5072909"
+cv="0" cm="0" ctws="695698148629" ctrs="411462311191"
+ctr="13171417128" ctw="29010979554" ctp="0" ctrh="8879733"
+ctrhp="0" ctd="18807726979" ctwft="1" ctwwt="0"
+ctwfw="29010979553" ctwfwsh="0" ctwfwshs="0" ctwh="228092"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-cl01.02"
+ro="7729904812" wo="20616593322" wou="1902817663" rb="411390168939" wb="693210800847"
+rl="22426526859" wl="14485086538" rlw="48262" wlw="52728" xl="4001727204">
+<ca rh="15985223" d="696450532261" ft="34" wt="0"
+fw="695698148595" wh="5072909" v="0" m="0"
+ri="7802046787" wi="20698126393" r="411446325968" dav="285" dcn="17646" sav="60" scn="15859" teav="11" 
+tsav="0"  tav="409"  pp="0"/>
+<cpy idx="0">
+<ca p="388094824768" rh="267708549289" ph="217428423754" d="565996653274"
+ft="1058" wt="0" fw="705040465795" wh="139167274893"
+v="22779" m="94" pm="21367560969" ri="8383751263"
+wi="18824504195" r="144716816769" dav="0" dcn="0"
+sav="1628" scn="103" pav="1663" pcn="179"
+teav="2"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="3"
+ctps="0" ctrhs="1784" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="848200644" ctwhs="24454"
+cv="0" cm="0" ctws="848200644" ctrs="20483892436"
+ctr="405178946" ctw="38309125" ctp="0" ctrh="279"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="38309125" ctwfwsh="0" ctwfwshs="0" ctwh="1015"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-cl01.03"
+ro="136695608" wo="29522310" wou="9157590" rb="18045065996" wb="848196092"
+rl="190372695" wl="15286494" rlw="12225" wlw="0" xl="81711367">
+<ca rh="1784" d="0" ft="0" wt="0"
+fw="848200644" wh="24454" v="0" m="0"
+ri="146226808" wi="29526862" r="20483890652" dav="0" dcn="0" sav="320" scn="112" teav="0" 
+tsav="0"  tav="49"  pp="0"/>
+<cpy idx="0">
+<ca p="22542323136" rh="19326508045" ph="18900153296" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="168" m="168" pm="455043451" ri="167466505"
+wi="0" r="1160585731" dav="0" dcn="0"
+sav="1354" scn="25" pav="851" pcn="21"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="4"
+ctps="0" ctrhs="261632392" ctrhps="0" ctds="30173537569"
+ctwfts="6330" ctwwts="0" ctwfws="30173532741" ctwhs="1504"
+cv="0" cm="0" ctws="30173539071" ctrs="17637337843"
+ctr="1966775267" ctw="2730162583" ctp="0" ctrh="32698721"
+ctrhp="0" ctd="2480578911" ctwft="126" ctwwt="0"
+ctwfw="2730162457" ctwfwsh="0" ctwfwshs="0" ctwh="188"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.aix.dc1-rtorprd.redo"
+ro="1935379329" wo="2468262992" wou="989875740" rb="17637337139" wb="30173539071"
+rl="471837460" wl="1083465791" rlw="0" wlw="0" xl="296843370">
+<ca rh="261632392" d="30173537569" ft="6330" wt="0"
+fw="30173532741" wh="1504" v="0" m="0"
+ri="1935379329" wi="2468262992" r="17375705451" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="11922995264" rh="16712402506" ph="6734030990" d="19552531019"
+ft="7354" wt="0" fw="30215473255" wh="10663005976"
+v="0" m="0" pm="640489952" ri="1905261377"
+wi="2480660831" r="707370393" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="10"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="0"
+ctr="0" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.aix.dc1-e8801v02.rootvg"
+ro="0" wo="0" wou="0" rb="0" wb="0"
+rl="0" wl="0" rlw="0" wlw="0" xl="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="0" wi="0" r="0" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="0" rh="0" ph="0" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="0" m="0" pm="0" ri="0"
+wi="0" r="0" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="11"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="0"
+ctr="0" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.aix.dc1-e8802v02.rootvg"
+ro="0" wo="0" wou="0" rb="0" wb="0"
+rl="0" wl="0" rlw="0" wlw="0" xl="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="0" wi="0" r="0" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="0" rh="0" ph="0" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="0" m="0" pm="0" ri="0"
+wi="0" r="0" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+</diskStatsColl>

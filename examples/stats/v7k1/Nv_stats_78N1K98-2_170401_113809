@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diskStatsColl
+xmlns="http://ibm.com/storage/management/performance/api/2005/08/vDiskStats"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ibm.com/storage/management/performance/api/2005/08/vDiskStats schema/SVCPerfStatsV.xsd" scope="node" id="node2" cluster="V7000-1" node_id="0x0000000000000002" cluster_id="0x00000200a0615f0e" sizeUnits="512B" timeUnits="msec" contains="virtualDiskStats" timestamp="2017-04-01 11:38:09" timezone="GMT+3:00">
+<vdsk idx="0"
+ctps="0" ctrhs="8" ctrhps="0" ctds="332469011"
+ctwfts="1" ctwwts="0" ctwfws="304752562" ctwhs="0"
+cv="0" cm="0" ctws="304752563" ctrs="6401863"
+ctr="135933" ctw="19017685" ctp="0" ctrh="1"
+ctrhp="0" ctd="20733167" ctwft="1" ctwwt="0"
+ctwfw="19017684" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="tst.aix.pmi02.test.01"
+ro="38298" wo="18998613" wou="74" rb="6401863" wb="304752531"
+rl="206607" wl="3701896" rlw="14661" wlw="263" xl="693864"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="8" d="332469011" ft="1" wt="0"
+fw="304752562" wh="0" v="0" m="0"
+ri="38298" wi="18998615" r="6401855" dav="127" dcn="5" sav="6550" scn="12" teav="0" 
+tsav="0"  tav="143"  pp="0"/>
+<cpy idx="0">
+<ca p="3332928" rh="2079053" ph="19260" d="420846930"
+ft="1055" wt="0" fw="751898356" wh="331052513"
+v="8" m="8" pm="416283" ri="51032"
+wi="21552362" r="4343090" dav="10821" dcn="4"
+sav="7106" scn="11" pav="8654" pcn="2"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="1"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="69417299"
+ctr="1226681" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.1"
+ro="383972" wo="0" wou="0" rb="69417299" wb="0"
+rl="235698" wl="0" rlw="0" wlw="0" xl="73585"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="383972" wi="0" r="69417299" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="69389824" rh="65637591" ph="61846346" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="431654" m="265275" pm="945933" ri="409116"
+wi="0" r="3804036" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="2"
+ctps="0" ctrhs="97288" ctrhps="0" ctds="34418665201"
+ctwfts="78" ctwwts="0" ctwfws="34418676627" ctwhs="11504"
+cv="0" cm="0" ctws="34418676705" ctrs="80870012786"
+ctr="1453698976" ctw="946340781" ctp="0" ctrh="9048"
+ctrhp="0" ctd="573051204" ctwft="5" ctwwt="0"
+ctwfw="946340776" ctwfwsh="0" ctwfwshs="0" ctwh="715"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.2"
+ro="360792935" wo="516330946" wou="32963620" rb="80869989451" wb="34418653371"
+rl="798647728" wl="351859340" rlw="59264" wlw="32873" xl="324296632"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="97288" d="34418665201" ft="78" wt="0"
+fw="34418676627" wh="11504" v="0" m="0"
+ri="360816270" wi="516354280" r="80869915498" dav="42356" dcn="81156" sav="2286" scn="13115" teav="19" 
+tsav="0"  tav="599"  pp="0"/>
+<cpy idx="0">
+<ca p="82291904064" rh="75691202233" ph="73043660019" d="20121228272"
+ft="5643" wt="0" fw="38713626854" wh="18608995118"
+v="549693" m="339825" pm="1232700333" ri="386435353"
+wi="507366851" r="6384930810" dav="14716" dcn="6196"
+sav="4460" scn="6600" pav="4426" pcn="2308"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="3"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="638899371" ctwhs="0"
+cv="0" cm="0" ctws="638899371" ctrs="113186594"
+ctr="1779318" ctw="10692446" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="10692446" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.3"
+ro="17835" wo="1373975" wou="1152057" rb="5750562" wb="638899371"
+rl="47908" wl="1280962" rlw="0" wlw="0" xl="809742"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="638899371" wh="0" v="0" m="0"
+ri="437507" wi="1373975" r="113186594" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="111198720" rh="109919134" ph="107406806" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="1487450" m="836103" pm="475404" ri="443013"
+wi="0" r="3279172" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="4"
+ctps="0" ctrhs="1825228" ctrhps="0" ctds="34336123444"
+ctwfts="192" ctwwts="0" ctwfws="34336135788" ctwhs="12536"
+cv="0" cm="0" ctws="34336135980" ctrs="34728067730"
+ctr="636575080" ctw="740460099" ctp="0" ctrh="44009"
+ctrhp="0" ctd="324718094" ctwft="43" ctwwt="0"
+ctwfw="740460056" ctwfwsh="0" ctwfwshs="0" ctwh="652"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.4"
+ro="121473692" wo="267048936" wou="9366056" rb="34728023391" wb="33850570236"
+rl="465219048" wl="174639118" rlw="52531" wlw="29587" xl="94271899"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="1825228" d="34336123444" ft="192" wt="0"
+fw="34336135788" wh="12536" v="0" m="0"
+ri="121518031" wi="268989840" r="34726242502" dav="31644" dcn="22921" sav="3708" scn="1479" teav="24" 
+tsav="0"  tav="263"  pp="0"/>
+<cpy idx="0">
+<ca p="43440968960" rh="23413953660" ph="21528455695" d="35850110444"
+ft="3709" wt="0" fw="38631087031" wh="2790217899"
+v="1235753" m="310465" pm="2758427119" ri="183113590"
+wi="321022449" r="11596988645" dav="13647" dcn="4562"
+sav="6655" scn="666" pav="9566" pcn="1519"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="5"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="7018880"
+ctr="117656" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.5"
+ro="24746" wo="0" wou="0" rb="7018880" wb="0"
+rl="44763" wl="0" rlw="0" wlw="0" xl="10228"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="24746" wi="0" r="7018880" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="7939648" rh="3998422" ph="3430234" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="82436" m="55486" pm="565616" ri="28596"
+wi="0" r="3036842" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="6"
+ctps="0" ctrhs="290025" ctrhps="0" ctds="9035801553"
+ctwfts="192" ctwwts="0" ctwfws="8890489624" ctwhs="49362"
+cv="0" cm="0" ctws="8890489816" ctrs="10888911967"
+ctr="238453217" ctw="304179175" ctp="0" ctrh="23338"
+ctrhp="0" ctd="225885176" ctwft="43" ctwwt="0"
+ctwfw="304179132" ctwfwsh="0" ctwfwshs="0" ctwh="1903"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.6"
+ro="112308341" wo="214742142" wou="35310136" rb="10888859953" wb="8890437802"
+rl="390606850" wl="111246897" rlw="51500" wlw="26844" xl="42789921"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="290025" d="9035801553" ft="192" wt="0"
+fw="8890489624" wh="49362" v="0" m="0"
+ri="112360355" wi="214794156" r="10888621942" dav="99888" dcn="36270" sav="4517" scn="2040" teav="18" 
+tsav="0"  tav="102"  pp="0"/>
+<cpy idx="0">
+<ca p="8923576768" rh="6400052948" ph="5455903409" d="11352310730"
+ft="4203" wt="0" fw="13330764646" wh="1978620420"
+v="109418" m="38017" pm="433919799" ri="123141512"
+wi="226364979" r="4516397638" dav="13183" dcn="8953"
+sav="5385" scn="1656" pav="4781" pcn="269"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="7"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="4011471"
+ctr="69636" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.7"
+ro="12007" wo="0" wou="0" rb="4011471" wb="0"
+rl="35322" wl="0" rlw="0" wlw="0" xl="7247"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="12007" wi="0" r="4011471" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="4816896" rh="645386" ph="426159" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="66847" m="66847" pm="550526" ri="15790"
+wi="0" r="3380421" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="8"
+ctps="0" ctrhs="5485" ctrhps="0" ctds="7017504746"
+ctwfts="87" ctwwts="0" ctwfws="7017523394" ctwhs="18735"
+cv="0" cm="0" ctws="7017523481" ctrs="13896625727"
+ctr="245242773" ctw="205948161" ctp="0" ctrh="331"
+ctrhp="0" ctd="156852774" ctwft="22" ctwwt="0"
+ctwfw="205948139" ctwfwsh="0" ctwfwshs="0" ctwh="1289"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.8"
+ro="123140389" wo="154641077" wou="8920988" rb="13896601669" wb="7017499423"
+rl="562082233" wl="93570450" rlw="50902" wlw="23709" xl="61077355"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="5485" d="7017504746" ft="87" wt="0"
+fw="7017523394" wh="18735" v="0" m="0"
+ri="123164447" wi="154665135" r="13896620242" dav="316" dcn="20375" sav="7398" scn="4238" teav="0" 
+tsav="0"  tav="94"  pp="0"/>
+<cpy idx="0">
+<ca p="10277387840" rh="5781640055" ph="5350768938" d="9967902641"
+ft="3604" wt="0" fw="11312468438" wh="1344887424"
+v="14578" m="14498" pm="612856173" ri="127479990"
+wi="164463722" r="8143203836" dav="11395" dcn="7680"
+sav="7367" scn="4236" pav="3309" pcn="57"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="9"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="18663622"
+ctr="302124" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.9"
+ro="67706" wo="0" wou="0" rb="18663622" wb="0"
+rl="95397" wl="0" rlw="0" wlw="0" xl="22820"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="67706" wi="0" r="18663622" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="20556352" rh="15063813" ph="12302034" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="953390" m="403381" pm="1033582" ri="73328"
+wi="0" r="3614657" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="10"
+ctps="0" ctrhs="2904" ctrhps="0" ctds="7804846341"
+ctwfts="13531" ctwwts="0" ctwfws="7804868420" ctwhs="35610"
+cv="0" cm="0" ctws="7804881951" ctrs="2827171002"
+ctr="63035194" ctw="193415122" ctp="0" ctrh="211"
+ctrhp="0" ctd="118188302" ctwft="252" ctwwt="0"
+ctwfw="193414870" ctwfwsh="0" ctwfwshs="0" ctwh="1821"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.10"
+ro="25232689" wo="111224319" wou="2083437" rb="2827009853" wb="7804720804"
+rl="103497548" wl="78114359" rlw="29420" wlw="32013" xl="21414016"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="2904" d="7804846341" ft="13531" wt="0"
+fw="7804868420" wh="35610" v="0" m="0"
+ri="25393838" wi="111385466" r="2827168098" dav="28022" dcn="5172" sav="4509" scn="646" teav="34" 
+tsav="0"  tav="180"  pp="0"/>
+<cpy idx="0">
+<ca p="1804507328" rh="2214501546" ph="1164145524" d="10156143464"
+ft="49448" wt="0" fw="12099764189" wh="1944815182"
+v="151282" m="23754" pm="81373572" ri="29358624"
+wi="122260248" r="627070929" dav="14340" dcn="1258"
+sav="5443" scn="514" pav="7097" pcn="285"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="11"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="545932796" ctwhs="256"
+cv="0" cm="0" ctws="545932796" ctrs="1818955893"
+ctr="29758296" ctw="9060760" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="9060760" ctwfwsh="0" ctwfwshs="0" ctwh="8"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.11"
+ro="8440299" wo="890649" wou="760454" rb="1818955893" wb="545932796"
+rl="5458433" wl="1108793" rlw="0" wlw="0" xl="2516418"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="545932796" wh="256" v="0" m="0"
+ri="8440299" wi="890649" r="1818955893" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="1910416256" rh="1769375088" ph="1761512564" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="162241" m="71928" pm="18610679" ri="9905141"
+wi="0" r="49706437" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="12"
+ctps="0" ctrhs="318373" ctrhps="0" ctds="8189519351"
+ctwfts="85" ctwwts="0" ctwfws="8189667168" ctwhs="147902"
+cv="0" cm="0" ctws="8189667253" ctrs="5425006921"
+ctr="120988184" ctw="234645926" ctp="0" ctrh="10444"
+ctrhp="0" ctd="157737327" ctwft="8" ctwwt="0"
+ctwfw="234645918" ctwfwsh="0" ctwfwshs="0" ctwh="5981"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.12"
+ro="51003580" wo="147080659" wou="19798299" rb="5424961426" wb="8189621760"
+rl="158508953" wl="99710223" rlw="53242" wlw="44084" xl="29592468"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="318373" d="8189519351" ft="85" wt="0"
+fw="8189667168" wh="147902" v="0" m="0"
+ri="51049075" wi="147126152" r="5424688548" dav="66063" dcn="23657" sav="4441" scn="1960" teav="40" 
+tsav="0"  tav="338"  pp="0"/>
+<cpy idx="0">
+<ca p="4317142464" rh="4423795058" ph="3216370698" d="11173916593"
+ft="2578" wt="0" fw="12484484069" wh="1310962431"
+v="329057" m="32574" pm="139857411" ri="57555660"
+wi="160250041" r="1024427670" dav="13239" dcn="6877"
+sav="5178" scn="1670" pav="3291" pcn="296"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="13"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="0" ctwhs="0"
+cv="0" cm="0" ctws="0" ctrs="488341861"
+ctr="9625633" ctw="0" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="0" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.13"
+ro="3287332" wo="0" wou="0" rb="488341861" wb="0"
+rl="2198432" wl="0" rlw="0" wlw="0" xl="509541"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="0" wh="0" v="0" m="0"
+ri="3287332" wi="0" r="488341861" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="621054080" rh="460972469" ph="458248729" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="362607" m="324175" pm="20312677" ri="3619196"
+wi="0" r="27423472" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="14"
+ctps="0" ctrhs="319" ctrhps="0" ctds="520037837"
+ctwfts="255" ctwwts="0" ctwfws="55814079" ctwhs="1507"
+cv="0" cm="0" ctws="55814334" ctrs="1832727757"
+ctr="34917910" ctw="1983209" ctp="0" ctrh="97"
+ctrhp="0" ctd="3002562" ctwft="66" ctwwt="0"
+ctwfw="1983143" ctwfwsh="0" ctwfwshs="0" ctwh="64"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.14"
+ro="11032237" wo="1513767" wou="1120089" rb="1832723367" wb="55809944"
+rl="39625264" wl="562997" rlw="24631" wlw="5969" xl="2061011"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="319" d="520037837" ft="255" wt="0"
+fw="55814079" wh="1507" v="0" m="0"
+ri="11036627" wi="1518157" r="1832727438" dav="1814" dcn="468" sav="2228" scn="160" teav="9" 
+tsav="0"  tav="63"  pp="0"/>
+<cpy idx="0">
+<ca p="1538409856" rh="1736317434" ph="1133081608" d="4661631114"
+ft="3248" wt="0" fw="4815001885" wh="153374908"
+v="1085" m="211" pm="52624968" ri="13726735"
+wi="11369536" r="112379795" dav="13081" dcn="205"
+sav="2818" scn="123" pav="4692" pcn="29"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+<vdsk idx="15"
+ctps="0" ctrhs="0" ctrhps="0" ctds="0"
+ctwfts="0" ctwwts="0" ctwfws="618917914" ctwhs="0"
+cv="0" cm="0" ctws="618917914" ctrs="1542433511"
+ctr="26942484" ctw="10345617" ctp="0" ctrh="0"
+ctrhp="0" ctd="0" ctwft="0" ctwwt="0"
+ctwfw="10345617" ctwfwsh="0" ctwfwshs="0" ctwh="0"
+gwot="0" gwo="0" gws="0" gwl="0"
+
+id="prd.vmw.dc1-vdc1.15"
+ro="7368690" wo="1005618" wou="922211" rb="1164348135" wb="618917914"
+rl="5233229" wl="1101755" rlw="0" wlw="0" xl="1949701"
+oro="0" owo="0"
+orl="0" owl="0" oiowp="0">
+<ca rh="0" d="0" ft="0" wt="0"
+fw="618917914" wh="0" v="0" m="0"
+ri="8845586" wi="1005618" r="1542433511" dav="0" dcn="0" sav="0" scn="0" teav="0" 
+tsav="0"  tav="0"  pp="0"/>
+<cpy idx="0">
+<ca p="1662260928" rh="1513258948" ph="1512277026" d="0"
+ft="0" wt="0" fw="0" wh="0"
+v="7271" m="7271" pm="18755564" ri="9011597"
+wi="0" r="29295843" dav="0" dcn="0"
+sav="0" scn="0" pav="0" pcn="0"
+teav="0"  tsav="0"  tav="0"  pp="0"/>
+</cpy>
+</vdsk>
+</diskStatsColl>
