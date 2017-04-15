@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        {% include "navpanel.html" %}
+        <div>
+            <p>Your upload was successful!</p>
+            <p>UploadID: {{upload_id}}</p>
+            <p>Your report will be ready soon. Use allstats page for monitoring.</p>
+            <p>Direct link to your stats: <a href="/{{upload_id}}">http://127.0.0.1:5000/{{upload_id}}</a></p>
+            
+        </div>
+    </div>
+  </body>
+</html>
