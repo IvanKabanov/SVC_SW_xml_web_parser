@@ -5,6 +5,7 @@ import os
 
 svc_web_parser = Flask(__name__)
 
+#Каталог для сохранения файлов:
 svc_web_parser.config['UPLOAD_FOLDER'] = 'uploads/'
 
 @svc_web_parser.route('/')
@@ -25,12 +26,12 @@ def stats_visualization_by_id(upload_id):
 @svc_web_parser.route('/upload', methods=['POST'])
 def upload():
     upload_id = randint(100000, 999999)
-    #!!!!Don't forget to check if upload_id exists!!!!
+    #!!!!Don't forget to check if upload_id unique!!!!
     uploaded_files = request.files.getlist("file[]")
     print(uploaded_files)
     filenames = []
     for file in uploaded_files:
-        filename = secure_filename(file.filename) #Фиг знает зачем, но пишут, что надо (удаляет нечитаемые символы из имени)
+        filename = secure_filename(file.filename) 
         file.save(os.path.join(svc_web_parser.config['UPLOAD_FOLDER'], filename))
         filename = svc_web_parser.config['UPLOAD_FOLDER'] + filename
         filenames.append(filename)
