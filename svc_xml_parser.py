@@ -92,7 +92,7 @@ def Nm_parser(path_to_file, upload_id):
         'upload_id': upload_id,
         'cluster_id': cluster_id
         }
-        mdisk_perf_counters = ['idx', 'id' 'ro', 'wo', 'rb', 'wb', 're', 'we', 'rq',
+        mdisk_perf_counters = ['idx', 'idd', 'ro', 'wo', 'rb', 'wb', 're', 'we', 'rq',
         'wq', 'ure', 'uwe', 'urq', 'uwq', 'pre', 'pwe', 'pro', 'pwo']
         for counter in mdisk_perf_counters:
             mdisk_perf[counter] = element[counter]
@@ -114,8 +114,7 @@ def Nv_parser(path_to_file, upload_id):
         'ctwwts', 'ctwfws', 'ctwhs', 'cv', 'cm', 'ctws', 'ctrs', 'ctr', 'ctw', 'ctp',
         'ctrh', 'ctrhp', 'ctd', 'ctwft', 'ctwwt', 'ctwfw', 'ctwfwsh', 'ctwfwshs',
         'ctwh', 'gwot', 'gwo', 'gws', 'gwl', 'id', 'ro', 'wo', 'wou', 'rb', 'wb', 'rl',
-        'wl', 'gwot', 'gwo', 'gws', 'gwl', 'id', 'ro', 'wo', 'wou', 'rb', 'wb', 'rl',
-        'wl','rlw', 'wlw', 'xl', 'oro', 'owo', 'orl', 'owl', 'oiowp']
+        'wl', 'rlw', 'wlw', 'xl']
         for counter in vdisk_perf_counters:
             if counter == 'id':
                 vdisk_perf[counter] = element[counter]
@@ -123,11 +122,3 @@ def Nv_parser(path_to_file, upload_id):
                 vdisk_perf[counter] = int(element[counter])
         vdisk_stats_list.append(vdisk_perf)
     return vdisk_stats_list
-
-
-#USAGE EXAMPLE
-# disk_stats_list_of_dicts = Nd_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
-# mdisk_stats_list_of_dicts = Nm_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
-# port_stats_list_of_dicts, cpu_stats_list_of_dicts, node_stats_list_of_dicts = Nn_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
-# vdisk_stats_list_of_dicts = Nv_parser('examples/stats/v7k1/Nv_stats_78N1K98-2_170401_115809', 123456)
-
