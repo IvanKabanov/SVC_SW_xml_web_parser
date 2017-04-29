@@ -40,5 +40,3 @@ def upload():
 
 if __name__ == "__main__":
     svc_web_parser.run(debug=True)
-
-
