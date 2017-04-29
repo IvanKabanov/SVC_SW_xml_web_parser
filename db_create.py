@@ -34,26 +34,7 @@ class Nd(Base):
     # email = Column(String(120), unique=True)
     # posts = relationship('Post', backref='author')
 
-    def __init__(self, idx=None, ro=None, rb=None, wo=None, re=None, we=None, rq=None, wq=None, 
-                 ure=None, uwe=None, urq=None, uwq=None, pre=None, pwe=None, pro=None, pwo=None, upload_id=None):
-        self.idx = idx
-        self.ro = ro
-        self.rb = rb
-        self.wo = wo
-        self.re = re
-        self.we = we
-        self.rq = rq
-        self.wq = wq
-        self.ure = ure
-        self.uwe = uwe
-        self.urq = urq
-        self.uwq = uwq
-        self.pre = pre
-        self.pwe = pwe
-        self.pro = pro
-        self.pwo = pwo
-        self.upload_id = upload_id
-
+    
     def __repr__(self):
         return '<Nd {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}>'.format(self.idx, self.ro, self.rb, self.wo,
                                                                                   self.re, self.we, self.rq, self.wq,
@@ -86,27 +67,7 @@ class Nm(Base):
     # ['idx', 'id' 'ro', 'wo', 'rb', 'wb', 're', 'we', 'rq',
     #     'wq', 'ure', 'uwe', 'urq', 'uwq', 'pre', 'pwe', 'pro', 'pwo'] не ввел поле id !!!
 
-    def __init__(self, idx=None, ro=None, wo=None, rb=None, wb=None, re=None, we=None, rq=None, wq=None, 
-                 ure=None, uwe=None, urq=None, uwq=None, pre=None, pwe=None, pro=None, pwo=None, upload_id=None):
-        self.idx = idx
-        self.ro = ro
-        self.wo = wo
-        self.rb = rb
-        self.wb = wb
-        self.re = re
-        self.we = we
-        self.rq = rq
-        self.wq = wq
-        self.ure = ure
-        self.uwe = uwe
-        self.urq = urq
-        self.uwq = uwq
-        self.pre = pre
-        self.pwe = pwe
-        self.pro = pro
-        self.pwo = pwo
-        self.upload_id = upload_id
-
+    
     def __repr__(self):
         return '<Nm {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}>'.format(self.idx, self.ro, self.wo, self.rb, 
                                                                                   self.wb, self.re, self.we, self.rq, self.wq,
@@ -164,51 +125,7 @@ class Nv(Base):
     #     'ctwh', 'gwot', 'gwo', 'gws', 'gwl', 'id - НЕТ !!!', 'ro', 'wo', 'wou', 'rb', 'wb', 'rl',
     #     'wl', 'rlw', 'wlw', 'xl']  не ввел поле id !!!
 
-    def __init__(self, idx=None, ctps=None, ctrhs=None, ctrhps=None, ctds=None, ctwfts=None, ctwwts=None, ctwfws=None, 
-                 ctwhs=None, cv=None, cm=None, ctws=None, ctrs=None, ctr=None, ctw=None, ctp=None, ctrh=None, ctrhp=None,
-                 ctd=None, ctwft=None, ctwwt=None, ctwfw=None, ctwfwsh=None, ctwfwshs=None, ctwh=None, gwot=None, gwo=None, 
-                 gws=None, gwl=None, ro=None, wo=None, wou=None, rb=None, wb=None, rl=None, wl=None, rlw=None, wlw=None, xl=None):
-
-        self.idx = idx
-        self.ctps = ctps
-        self.ctrhs = ctrhs
-        self.ctrhps = ctrhps
-        self.ctds = ctds
-        self.ctwfts = ctwfts
-        self.ctwwts = ctwwts
-        self.ctwfws = ctwfws
-        self.ctwhs = ctwhs
-        self.cv = cv
-        self.cm = cm
-        self.ctws = ctws
-        self.ctrs = ctrs
-        self.ctr = ctr
-        self.ctw = ctw
-        self.ctp = ctp
-        self.pwo = pwo
-        self.ctrh = ctrh
-        self.ctrhp = ctrhp
-        self.ctd = ctd
-        self.ctwft = ctwft
-        self.ctwwt = ctwwt
-        self.ctwfw = ctwfw
-        self.ctwfwsh = ctwfwsh
-        self.ctwfwshs = ctwfwshs
-        self.ctwh = ctwh
-        self.gwot = gwot
-        self.gwo = gwo
-        self.gws = gws
-        self.gwl = gwl
-        self.ro = ro
-        self.wo = wo
-        self.wow = wow
-        self.rb = rb
-        self.wb = rl
-        self.wl = wl
-        self.rlw = rlw
-        self.wlw = wlw
-        self.xl = xl
-        
+            
 
     def __repr__(self):
         return '<Nv {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}>'.format(self.idx, self.ctps, self.ctrhs, self.ctrhps, self.ctds, 

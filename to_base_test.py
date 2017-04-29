@@ -2,6 +2,7 @@ import untangle
 from svc_xml_parser import Nd_parser, Nn_parser, Nm_parser, Nv_parser
 from db_insert import path_to_file
 
+
 path_list = [r'C:\projects\diploma\SVC_SW_xml_web_parser\examples\stats\v7k2\Nd_stats_78G0036-1_170401_084425',
  			 r'C:\projects\diploma\SVC_SW_xml_web_parser\examples\stats\v7k2\Nd_stats_78G0036-1_170401_085925',
  			 r'C:\projects\diploma\SVC_SW_xml_web_parser\examples\stats\v7k2\Nd_stats_78G0036-1_170401_091425',

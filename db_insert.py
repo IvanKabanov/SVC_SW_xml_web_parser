@@ -15,17 +15,19 @@ def path_to_file(path_to_file, upload_id):
 
 		data = res
 
-		i=0
+		# i=0
 
 		for item in res:
 
-			to_database=Nd(data[i]['idx'], data[i]['ro'], data[i]['rb'], data[i]['wo'], data[i]['re'], data[i]['we'], data[i]['rq'],
-				           data[i]['wq'], data[i]['ure'], data[i]['uwe'], data[i]['urq'], data[i]['uwq'], data[i]['pre'], data[i]['pwe'],
-				           data[i]['pro'], data[i]['pwo'], data[i]['upload_id'])
+			to_database=Nd(idx=item['idx'], ro=item['ro'], rb=item['rb'], wo=item['wo'],
+				           re=item['re'], we=item['we'], rq=item['rq'], wq=item['wq'],
+				           ure=item['ure'], uwe=item['uwe'], urq=item['urq'], uwq=item['uwq'],
+				           pre=item['pre'], pwe=item['pwe'], pro=item['pro'], pwo=item['pwo'],
+				           upload_id=item['upload_id'])
 
 			db_session.add(to_database)
 
-			i += 1
+			# i += 1
 			
 		db_session.commit()
 
@@ -34,17 +36,19 @@ def path_to_file(path_to_file, upload_id):
 
 		data = res
 
-		i=0
+		# i=0
 
 		for item in res:
 
-			to_database=Nm(data[i]['idx'], data[i]['ro'], data[i]['wo'], data[i]['rb'], data[i]['wb'], data[i]['re'], data[i]['we'], data[i]['rq'],
-				           data[i]['wq'], data[i]['ure'], data[i]['uwe'], data[i]['urq'], data[i]['uwq'], data[i]['pre'], data[i]['pwe'],
-				           data[i]['pro'], data[i]['pwo'], data[i]['upload_id'])
+			to_database=Nm(idx=item['idx'], ro=item['ro'], wo=item['wo'], rb=item['rb'],
+				           wb=item['wb'], re=item['re'], we=item['we'], rq=item['rq'],
+				           wq=item['wq'], ure=item['ure'], uwe=item['uwe'], urq=item['urq'],
+				           uwq=item['uwq'], pre=item['pre'], pwe=item['pwe'], pro=item['pro'],
+				           pwo=item['pwo'], upload_id=item['upload_id'])
 
 			db_session.add(to_database)
 
-			i += 1
+			# i += 1
 			
 		db_session.commit()
 
@@ -59,7 +63,3 @@ def path_to_file(path_to_file, upload_id):
 		return
 
 	#print(contains)
-
-	
-
-
